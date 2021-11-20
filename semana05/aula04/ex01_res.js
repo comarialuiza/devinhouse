@@ -47,10 +47,10 @@ class Book {
 
     toJSON() {
         return {
-            title: this.#title,
-            author: this.#author,
-            year: this.#year,
-            loaned: this.#loaned
+            title: this.title,
+            author: this.author,
+            year: this.year,
+            loaned: this.loaned
         }
     }
 
@@ -90,6 +90,8 @@ const twilight = new Book('Twilight', 'Stephenie Meyer', 2005);
 const lordOfTheRings = new Book('Lord of the Rings', 'J.R.R. Tolkien', 1954);
 const harryPotter = new Book('Harry Potter and the Philosopher\'s stone', 'J.K. Rowking', 1997);
 
+console.log(twilight.toJSON());
+
 const booksArray = [twilight, lordOfTheRings, harryPotter];
 // console.log(Book.sortBookByDate(booksArray));
 
@@ -101,7 +103,7 @@ const hqArray = [umbrellaAcademy, scottPilgrim, watchmen];
 
 const multiArray = [twilight, lordOfTheRings, harryPotter, umbrellaAcademy, scottPilgrim, watchmen];
 // console.log(Book.sortBookByDate(multiArray));
-console.log(HQ.sortBookByDate(multiArray));
+// console.log(HQ.sortBookByDate(multiArray));
 
 // console.log(HQ.sortBookByDate(hqArray));
 
