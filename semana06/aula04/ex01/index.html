@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cadastro usuários</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>Cadastro de usuário</h1>
+
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name">
+
+            <label for="image">Imagem</label>
+            <input type="text" id="image" name="image">
+
+            <label for="description">Descrição</label>
+            <textarea id="description" name="description"></textarea>
+
+            <button id="submit">Criar usuário</button>
+        </div>
+
+        <div class="user-info">
+            <div class="user-image-container">
+                <img src="https://images.unsplash.com/photo-1637536701374-073adb2ee745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" alt="Usuário" id="user-image">
+            </div>
+
+            <h3 id="user-name">Jane Doe</h3>
+
+            <p id="user-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+    <!-- <script src="./main.js"></script> -->
+</body>
+</html>
