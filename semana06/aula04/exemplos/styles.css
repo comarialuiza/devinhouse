@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+body, input, textarea, button {
+    font-family: "Open Sans";
+    color: #333;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img, svg {
+    max-width: 100%;
+}
+
+body {
+    background-image: linear-gradient(to right, #ff8818, #ff3f44, #fa0076, #c000ad, #112bda);
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Press Start 2P', cursive;
+}
