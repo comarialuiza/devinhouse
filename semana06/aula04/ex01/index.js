@@ -14,8 +14,8 @@ import {
     dezMinutosString,
     quinzeMinutosString
 } from './modules/minutos.js';
-
-let duracao = cincoMinutos;
+import paraTimer from './modules/paraTimer.js';
+import iniciaTimer from './modules/iniciaTimer.js';
 
 cincoMinutosBotao.addEventListener('click', () => {
     tempo.innerHTML = cincoMinutosString;
@@ -47,38 +47,5 @@ quinzeMinutosBotao.addEventListener('click', () => {
     quinzeMinutosBotao.classList.add('selecionado');
 });
 
-let intervalo;
-
-botaoIniciar.addEventListener('click', () => {
-    let timer = duracao;
-    let minutos = 0;
-    let segundos = 0;
-
-    intervalo = setInterval(() => {
-        minutos = parseInt(timer / 60, 10);
-        segundos = parseInt(timer % 60, 10);
-
-        minutos = minutos < 10 ? "0" + minutos : minutos;
-        segundos = segundos < 10 ? "0" + segundos : segundos;
-
-        tempo.textContent = minutos + ":" + segundos;
-
-        if (--timer < 0) {
-            timer = duration;
-        }
-    }, 1000);
-
-    cincoMinutosBotao.disabled = true;
-    dezMinutosBotao.disabled = true;
-    quinzeMinutosBotao.disabled = true;
-}); 
-
-botaoParar.addEventListener('click', () => {
-    clearInterval(intervalo);
-
-    tempo.innerHTML = '05:00';
-
-    cincoMinutosBotao.disabled = false;
-    dezMinutosBotao.disabled = false;
-    quinzeMinutosBotao.disabled = false;
-});
+botaoIniciar.addEventListener('click', iniciaTimer); 
+botaoParar.addEventListener('click', paraTimer);
