@@ -1,1 +1,4 @@
-export const nome = "Fernando";
+const nome = "Fernando";
+export const sobreNome = "Seixas";
+
+export default nome;

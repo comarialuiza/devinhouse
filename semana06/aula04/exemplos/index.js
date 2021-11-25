@@ -1,1 +1,3 @@
-x = 3.14;
+import alteraValor from './modules/alteraValor.js';
+
+alteraValor();
