@@ -1,18 +1,24 @@
-const cincoMinutos = 60 * 5;
-const dezMinutos = 60 * 10;
-const quinzeMinutos = 60 * 15;
+import {
+    botaoIniciar,
+    botaoParar,
+    tempo,
+    cincoMinutosBotao,
+    dezMinutosBotao,
+    quinzeMinutosBotao
+} from './modules/seletores.js';
+import {
+    cincoMinutos,
+    dezMinutos,
+    quinzeMinutos,
+    cincoMinutosString,
+    dezMinutosString,
+    quinzeMinutosString
+} from './modules/minutos.js';
 
 let duracao = cincoMinutos;
-const botaoIniciar = document.querySelector("#iniciar");
-const botaoParar = document.querySelector("#parar");
-const tempo = document.querySelector("#tempo");
-
-const cincoMinutosBotao = document.querySelector("#cincoMinutos");
-const dezMinutosBotao = document.querySelector("#dezMinutos");
-const quinzeMinutosBotao = document.querySelector("#quinzeMinutos");
 
 cincoMinutosBotao.addEventListener('click', () => {
-    tempo.innerHTML = '05:00';
+    tempo.innerHTML = cincoMinutosString;
     duracao = cincoMinutos;
 
     dezMinutosBotao.classList.remove('selecionado');
@@ -22,7 +28,7 @@ cincoMinutosBotao.addEventListener('click', () => {
 });
 
 dezMinutosBotao.addEventListener('click', () => {
-    tempo.innerHTML = '10:00';
+    tempo.innerHTML = dezMinutosString;
     duracao = dezMinutos;
 
     cincoMinutosBotao.classList.remove('selecionado');
@@ -32,7 +38,7 @@ dezMinutosBotao.addEventListener('click', () => {
 });
 
 quinzeMinutosBotao.addEventListener('click', () => {
-    tempo.innerHTML = '15:00';
+    tempo.innerHTML = quinzeMinutosString;
     duracao = quinzeMinutos;
 
     cincoMinutosBotao.classList.remove('selecionado');
