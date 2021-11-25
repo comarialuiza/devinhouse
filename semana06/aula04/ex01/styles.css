@@ -92,7 +92,7 @@ button {
     color: #fffffd;
 }
 
-.botaoMinutos:disabled {
+button:disabled {
     opacity: .2;
     cursor: not-allowed;
 }

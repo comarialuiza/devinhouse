@@ -1,17 +1,18 @@
+import { duracao } from '../index.js';
 import {
-    cincoMinutos
-} from './minutos.js';
-import {
+    botaoIniciar,
     cincoMinutosBotao,
     dezMinutosBotao,
     quinzeMinutosBotao,
     tempo
 } from './seletores.js';
+import paraTimer from './paraTimer.js';
 
-let duracao = cincoMinutos;
 export let intervalo;
 
 const iniciaTimer = () => {
+    botaoIniciar.disabled = true;
+
     let timer = duracao;
     let minutos = 0;
     let segundos = 0;
@@ -26,7 +27,11 @@ const iniciaTimer = () => {
         tempo.textContent = minutos + ":" + segundos;
 
         if (--timer < 0) {
-            timer = duration;
+            timer = duracao;
+        }
+
+        if (timer === 0) {
+            paraTimer();
         }
     }, 1000);
 

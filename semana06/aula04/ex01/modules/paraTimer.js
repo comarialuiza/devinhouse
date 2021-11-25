@@ -1,15 +1,17 @@
+import { intervalo } from './iniciaTimer.js';
 import {
-    tempo,
+    botaoIniciar,
     cincoMinutosBotao,
     dezMinutosBotao,
-    quinzeMinutosBotao
+    quinzeMinutosBotao,
+    tempo
 } from './seletores.js';
-import { intervalo } from './iniciaTimer.js';
 
 const paraTimer = () => {
+    botaoIniciar.disabled = false;
     clearInterval(intervalo);
 
-    tempo.innerHTML = '05:00';
+    tempo.textContent = '05:00';
 
     cincoMinutosBotao.disabled = false;
     dezMinutosBotao.disabled = false;

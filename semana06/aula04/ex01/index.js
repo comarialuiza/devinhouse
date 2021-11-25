@@ -17,8 +17,10 @@ import {
 import paraTimer from './modules/paraTimer.js';
 import iniciaTimer from './modules/iniciaTimer.js';
 
+export let duracao = cincoMinutos;
+
 cincoMinutosBotao.addEventListener('click', () => {
-    tempo.innerHTML = cincoMinutosString;
+    tempo.textContent = cincoMinutosString;
     duracao = cincoMinutos;
 
     dezMinutosBotao.classList.remove('selecionado');
@@ -28,7 +30,7 @@ cincoMinutosBotao.addEventListener('click', () => {
 });
 
 dezMinutosBotao.addEventListener('click', () => {
-    tempo.innerHTML = dezMinutosString;
+    tempo.textContent = dezMinutosString;
     duracao = dezMinutos;
 
     cincoMinutosBotao.classList.remove('selecionado');
@@ -38,7 +40,7 @@ dezMinutosBotao.addEventListener('click', () => {
 });
 
 quinzeMinutosBotao.addEventListener('click', () => {
-    tempo.innerHTML = quinzeMinutosString;
+    tempo.textContent = quinzeMinutosString;
     duracao = quinzeMinutos;
 
     cincoMinutosBotao.classList.remove('selecionado');
