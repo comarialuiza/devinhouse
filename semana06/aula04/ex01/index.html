@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer online</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button id="cincoMinutos" class="selecionado botaoMinutos">05:00 minutos</button>
+            <button id="dezMinutos" class="botaoMinutos">10:00 minutos</button>
+            <button id="quinzeMinutos" class="botaoMinutos">15:00 minutos</button>
+        </div>
+
+        <p class="tempo"><span id="tempo">05:00</span> minutos</p>
+
+        <div class="buttons">
+            <button id="iniciar" class="botaoAcao">Iniciar timer</button>
+            <button id="parar" class="botaoAcao">Parar timer</button>
+        </div>
+    </div>
+
+    <script defer type="module" src="./index.js"></script>
+</body>
+</html>
