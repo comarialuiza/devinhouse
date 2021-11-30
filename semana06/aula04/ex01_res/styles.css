@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+body, input, textarea, button {
+    font-family: "Open Sans";
+    color: #333;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fbb444;
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+button {
+    cursor: pointer;* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    body, input, textarea, button {
+        font-family: "Open Sans";
+        color: #333;
+    }
+    
+    body, html {
+        overflow-x: hidden;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        background-color: #fbb444;
+        height: 100vh;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    h1 {
+        margin-bottom: 30px;
+    }
+    
+    button {
+        cursor: pointer;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .buttons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .tempo {
+        margin: 30px 0;
+        color: #2b1c3f;
+        font-size: 50px;
+    }
+    
+    button {
+        border: 0;
+    }
+    
+    .botaoAcao {
+        padding: 12px;
+        width: 100%;
+    }
+    
+    .botaoMinutos {
+        padding: 15px;
+        background-color: #fabc51;
+    }
+    
+    #iniciar {
+        background-color: #776194;
+        color: #fffffd;
+    }
+    
+    #parar {
+        background-color: #e8922d;
+        color: #fffffd;
+    }
+    
+    .selecionado {
+        background-color: #2b1c3e;
+        color: #fffffd;
+    }
+    
+    button:disabled {
+        opacity: .2;
+        cursor: not-allowed;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tempo {
+    margin: 30px 0;
+    color: #2b1c3f;
+    font-size: 50px;
+}
+
+button {
+    border: 0;
+}
+
+.botaoAcao {
+    padding: 12px;
+    width: 100%;
+}
+
+.botaoMinutos {
+    padding: 15px;
+    background-color: #fabc51;
+}
+
+#iniciar {
+    background-color: #776194;
+    color: #fffffd;
+}
+
+#parar {
+    background-color: #e8922d;
+    color: #fffffd;
+}
+
+.selecionado {
+    background-color: #2b1c3e;
+    color: #fffffd;
+}
+
+button:disabled {
+    opacity: .2;
+    cursor: not-allowed;
+}
