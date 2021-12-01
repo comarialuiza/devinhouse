@@ -72,7 +72,7 @@ const todosOsPaisesEstaoNaEuropa = paises.every(pais => pais.region === "Europe"
 
 //////////////
 
-const europa = paises.filter(pais => pais.region === "Europe");
+const europa = paises.filter(({ region }) => region === "Europe");
 const populacaoEuropa = europa.map(pais => pais.population);
 const somaPopulacaoEuropa = populacaoEuropa.reduce((total, atual) => total + atual);
 const mediaPopulacaoEuropa = somaPopulacaoEuropa / populacaoEuropa.length;
